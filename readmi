@@ -1,0 +1,38 @@
+O Hotel Management System é um sistema de gerenciamento de reservas de hotel desenvolvido para facilitar a administração de hóspedes, quartos e reservas. Este projeto utiliza comandos SQL para criar um banco de dados relacional que permite realizar operações de criação, leitura, atualização e exclusão (CRUD) com integridade e segurança dos dados.
+
+Funcionalidades
+Gerenciamento de Hóspedes: Armazena informações detalhadas sobre os hóspedes, como nome, telefone e e-mail.
+Gerenciamento de Quartos: Controla os dados dos quartos disponíveis no hotel, incluindo tipo e preço.
+Reservas: Registra todas as reservas realizadas, incluindo datas de check-in e check-out, vinculando-as aos hóspedes e quartos.
+Consultas Avançadas: Permite listar todas as reservas, quartos disponíveis e informações detalhadas dos hóspedes.
+Atualização e Exclusão: Facilita a atualização de dados de hóspedes e quartos e a exclusão de reservas, mantendo a integridade referencial.
+Estrutura do Banco de Dados
+Tabela Hospedes: Armazena informações sobre os hóspedes do hotel.
+
+id_hospede (INT, PK)
+nome (VARCHAR)
+telefone (VARCHAR)
+email (VARCHAR)
+Tabela Quartos: Contém detalhes sobre os quartos disponíveis.
+
+id_quarto (INT, PK)
+numero (INT)
+tipo (VARCHAR)
+preco (DECIMAL)
+Tabela Reservas: Registra as reservas feitas pelos hóspedes.
+
+id_reserva (INT, PK)
+id_hospede (INT, FK)
+id_quarto (INT, FK)
+data_checkin (DATE)
+data_checkout (DATE)
+Requisitos
+MySQL ou outro sistema de gerenciamento de banco de dados relacional compatível.
+Cliente SQL para executar os scripts.
+Como Executar
+Clone este repositório para o seu ambiente local:
+git clone https://github.com/seuusuario/HotelManagementSystem.git
+Conecte-se ao seu servidor de banco de dados e crie o banco de dados executando o script hotel_management_system.sql.
+Realize as operações de gerenciamento conforme necessário usando os comandos SQL incluídos.
+Licença
+Este projeto é de domínio público e pode ser usado e modificado livremente.
