@@ -1,0 +1,18 @@
+# Arquivos de configuração do ambiente
+*.env
+
+# Logs
+*.log
+
+# Banco de Dados e arquivos de backup
+*.bak
+*.sql~
+
+# Arquivos temporários e de sistema
+*.swp
+*.DS_Store
+*.tmp
+
+# Configurações do editor
+.vscode/
+.idea/
